@@ -1,0 +1,11 @@
+<HTML>
+	<body>
+		<h1>This is secured</h1>
+		
+		<%= simple_form_for @user do |f| %>
+		  <%= f.input :email %>
+		  <%= f.input :encrypted_password %>
+		  <%= f.button :submit %>
+		<% end %>
+	</body>
+<HTML>
