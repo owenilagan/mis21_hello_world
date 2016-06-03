@@ -12,6 +12,9 @@ Rails.application.routes.draw do
   #   get 'products/:id' => 'catalog#view'
   
   get 'secured' => 'secured#index'
+  
+  get 'bootstrap/example' => 'welcome#bootstrap_example'
+  get 'bootstrap/form' => 'welcome#bootstrap_form'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

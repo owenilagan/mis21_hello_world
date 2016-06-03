@@ -2,6 +2,12 @@
 	<body>
 		<h1>Hello World!</h1>
 		<ul>
+		  <li>
+		  <%= link_to('Bootstrap Example', 'bootstrap/example')  %>  
+		  </li>
+		  <li>
+		  <%= link_to('Bootstrap Form', 'bootstrap/form')  %>  
+		  </li>
 		<% if user_signed_in? %>
 		  <li>
 		  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
